@@ -25,14 +25,12 @@ typedef enum
 	WT_28V_IN,
 	WT_GND_IN,
 	VG_28V_OUT,
-	VG_28V_OUT_DET,
 	VG_GND_OUT,
-	VG_GND_OUT_DET,
 	FLV_DIR,
 	FLV_NRESET,
+	FLV_I,
 	FLV_DECAY,
 	FLV_NSLEEP,
-	FLV_I4,
 	FLV_ENABLE,
 	EN_28VV,
 	FLV_IND_CL,
@@ -41,7 +39,6 @@ typedef enum
 	FLV_ALT_DRV_CL,
 	FLV_ALT_IND_CL,
 	FLV_ALT_IND_OP,
-	EN_485,
 	SW_SOV,
 	IR_ANA_INPUT,
 	SOV_DRV_OP,
@@ -65,7 +62,7 @@ typedef enum
 	LED6,
 	LVL_FAIL_GND_OUT,
 	OPERATION_FAIL_GND_OUT,
-	FLV_I0_I3,
+	EN_485,
 	CONTROLLER_DEVICE_ID_END
 } ControllerDeviceIDs;
 
@@ -103,14 +100,12 @@ DeviceIdentity id_DRAIN_CMD_GND_IN		= {DRAIN_CMD_GND_IN,		"DRAIN_CMD_GND_IN"	};
 DeviceIdentity id_WT_28V_IN   			= {WT_28V_IN,  			"WT_28V_IN"		};
 DeviceIdentity id_WT_GND_IN  			= {WT_GND_IN, 			"WT_GND_IN"		};
 DeviceIdentity id_VG_28V_OUT      		= {VG_28V_OUT,       		"VG_28V_OUT"	    	};
-DeviceIdentity id_VG_28V_OUT_DET		= {VG_28V_OUT_DET,    		"VG_28V_OUT_DET"	};
 DeviceIdentity id_VG_GND_OUT    		= {VG_GND_OUT,   		"VG_GND_OUT"		};
-DeviceIdentity id_VG_GND_OUT_DET		= {VG_GND_OUT_DET,		"VG_GND_OUT_DET"	};
 DeviceIdentity id_FLV_DIR    			= {FLV_DIR,  			"FLV_DIR"   		};
 DeviceIdentity id_FLV_NRESET    		= {FLV_NRESET,  		"FLV_NRESET"    	};
 DeviceIdentity id_FLV_DECAY 			= {FLV_DECAY,  			"FLV_DECAY" 		};
 DeviceIdentity id_FLV_NSLEEP  			= {FLV_NSLEEP,  		"FLV_NSLEEP" 		};
-DeviceIdentity id_FLV_I4   			= {FLV_I4,  			"FLV_I4"  		};
+DeviceIdentity id_FLV_I   			= {FLV_I,  			"FLV_I"  		};
 DeviceIdentity id_FLV_ENABLE   			= {FLV_ENABLE,			"FLV_ENABLE"		};
 DeviceIdentity id_EN_28VV    			= {EN_28VV,  			"EN_28VV"		};
 DeviceIdentity id_FLV_IND_CL       		= {FLV_IND_CL,    	    	"FLV_IND_CL"      	};
@@ -119,7 +114,6 @@ DeviceIdentity id_FLV_ALT_DRV_OP  		= {FLV_ALT_DRV_OP,  		"FLV_ALT_DRV_OP" 	};
 DeviceIdentity id_FLV_ALT_DRV_CL  		= {FLV_ALT_DRV_CL, 	 	"FLV_ALT_DRV_CL" 	};
 DeviceIdentity id_FLV_ALT_IND_CL    		= {FLV_ALT_IND_CL,  		"FLV_ALT_IND_CL" 	};
 DeviceIdentity id_FLV_ALT_IND_OP   		= {FLV_ALT_IND_OP,  		"FLV_ALT_IND_OP" 	};
-DeviceIdentity id_EN_485	       		= {EN_485,       		"EN_485"      		};
 DeviceIdentity id_SW_SOV	      		= {SW_SOV,       		"SW_SOV"	     	};
 DeviceIdentity id_IR_ANA_INPUT       		= {IR_ANA_INPUT,        	"IR_ANA_INPUT"      	};
 DeviceIdentity id_SOV_DRV_OP	 		= {SOV_DRV_OP, 			"SOV_DRV_OP"	 	};
@@ -143,7 +137,7 @@ DeviceIdentity id_LED5			    	= {LED5,  			"LED5"    		};
 DeviceIdentity id_LED6			    	= {LED6,  			"LED6"    		};
 DeviceIdentity id_LVL_FAIL_GND_OUT		= {LVL_FAIL_GND_OUT,	  	"LVL_FAIL_GND_OUT" 	};
 DeviceIdentity id_OPERATION_FAIL_GND_OUT	= {OPERATION_FAIL_GND_OUT,	"OPERATION_FAIL_GND_OUT"};
-DeviceIdentity id_FLV_I0_I3			= {FLV_I0_I3,		  	"FLV_I0_I3" 		};
+DeviceIdentity id_EN_485	       		= {EN_485,       		"EN_485"      		};
 
 DeviceIdentity id_AN0_LEVEL_H  			= {AN0_LEVEL_H,   		"AN0_LEVEL_H" 		};
 DeviceIdentity id_AN1_LEVEL_L  			= {AN1_LEVEL_L,   		"AN1_LEVEL_L" 		};
